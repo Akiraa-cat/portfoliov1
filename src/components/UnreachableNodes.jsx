@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
 import { playHoverPip, playGlitchBuzzer } from '../utils/audio';
 
-interface UnreachableNodesProps {
-  isMuted: boolean;
-}
-
 const NODES = ['/profile', '/missions', '/loadout', '/achievements', '/journey'];
 
-export const UnreachableNodes: React.FC<UnreachableNodesProps> = ({ isMuted }) => {
-  const [deniedNode, setDeniedNode] = useState<string | null>(null);
+export const UnreachableNodes = ({ isMuted }) => {
+  const [deniedNode, setDeniedNode] = useState(null);
 
-  const handleClickNode = (node: string) => {
+  const handleClickNode = (node) => {
     if (!isMuted) playGlitchBuzzer();
     setDeniedNode(node);
     setTimeout(() => {
@@ -37,7 +33,6 @@ export const UnreachableNodes: React.FC<UnreachableNodesProps> = ({ isMuted }) =
         ))}
       </div>
 
-      {/* Security Denied Toast */}
       {deniedNode && (
         <div className="text-[10px] text-[#ff2a6d] bg-[#ff2a6d]/10 border border-[#ff2a6d]/40 px-3 py-1 chamfer-card animate-pulse tracking-wide">
           SECURITY_ALERT: ROUTE {deniedNode} ACCESS DENIED. HAZARD LOCKOUT ENFORCED.

@@ -1,16 +1,14 @@
 import React from 'react';
 import { AlertTriangle } from 'lucide-react';
 
-export const HazardBanner: React.FC = () => {
+export const HazardBanner = () => {
   return (
     <div
       id="hazard-warning-strip"
       className="w-full chamfer-card overflow-hidden border border-[#ff2a6d]/80 shadow-[0_0_30px_rgba(255,42,109,0.22)] select-none"
     >
-      {/* Top Hazard Stripes */}
       <div className="hazard-stripes h-3 w-full opacity-90"></div>
 
-      {/* Center Signal Bar */}
       <div className="bg-[#0a0a0c]/95 px-4 md:px-6 py-2 flex flex-wrap items-center justify-between gap-3 border-y border-[#ff2a6d]/40">
         <div className="flex items-center gap-2.5 text-[#ff2a6d]">
           <AlertTriangle className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0 animate-pulse" />
@@ -27,7 +25,6 @@ export const HazardBanner: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom Hazard Stripes */}
       <div className="hazard-stripes h-2.5 w-full opacity-80"></div>
     </div>
   );

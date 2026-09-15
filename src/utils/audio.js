@@ -1,11 +1,11 @@
 // Web Audio API Synthesizer for Cyberpunk UI interactions
 
-let audioCtx: AudioContext | null = null;
+let audioCtx = null;
 
-export function getAudioContext(): AudioContext | null {
+export function getAudioContext() {
   if (typeof window === 'undefined') return null;
   if (!audioCtx) {
-    const AudioCtxClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+    const AudioCtxClass = window.AudioContext || window.webkitAudioContext;
     if (AudioCtxClass) {
       audioCtx = new AudioCtxClass();
     }
@@ -16,12 +16,7 @@ export function getAudioContext(): AudioContext | null {
   return audioCtx;
 }
 
-export function playTone(
-  freq = 880,
-  type: OscillatorType = 'sine',
-  duration = 0.04,
-  gainVal = 0.06
-) {
+export function playTone(freq = 880, type = 'sine', duration = 0.04, gainVal = 0.06) {
   const ctx = getAudioContext();
   if (!ctx) return;
   try {

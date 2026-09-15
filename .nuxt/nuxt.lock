@@ -1,0 +1,9 @@
+{
+  "pid": 104316,
+  "startedAt": 1789455192900,
+  "command": "dev",
+  "cwd": "D:/code/portofolio-akiraa/portfoliov1",
+  "port": 3000,
+  "hostname": "0.0.0.0",
+  "url": "http://0.0.0.0:3000"
+}

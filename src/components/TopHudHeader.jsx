@@ -2,18 +2,12 @@ import React from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 import { playHoverPip, playTone } from '../utils/audio';
 
-interface TopHudHeaderProps {
-  isMuted: boolean;
-  onToggleAudio: () => void;
-}
-
-export const TopHudHeader: React.FC<TopHudHeaderProps> = ({ isMuted, onToggleAudio }) => {
+export const TopHudHeader = ({ isMuted, onToggleAudio }) => {
   return (
     <header
       id="top-hud-header"
       className="relative z-20 w-full border-b border-[#2c3539]/80 bg-[#121316]/95 backdrop-blur px-4 md:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono select-none"
     >
-      {/* Left: Netrunner Identification & Integrity Gauge */}
       <div className="flex items-center gap-4 md:gap-6">
         <div className="flex items-center gap-2.5">
           <span className="relative flex h-2.5 w-2.5">
@@ -28,7 +22,6 @@ export const TopHudHeader: React.FC<TopHudHeaderProps> = ({ isMuted, onToggleAud
           </span>
         </div>
 
-        {/* Slanted System Integrity Gauge */}
         <div className="hidden md:flex items-center gap-2.5 border-l border-[#2c3539] pl-4">
           <span className="text-[10px] text-gray-400 uppercase tracking-tight">
             INTEGRITY GAUGE:
@@ -46,7 +39,6 @@ export const TopHudHeader: React.FC<TopHudHeaderProps> = ({ isMuted, onToggleAud
         </div>
       </div>
 
-      {/* Right: Route Location, Daemon Status, and Audio Synthesizer Toggle */}
       <div className="flex items-center gap-3 md:gap-6 text-[11px]">
         <div className="hidden lg:flex items-center gap-2 text-gray-400">
           <span>LOC:</span>
