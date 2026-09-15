@@ -1,0 +1,7 @@
+{
+  "name": "Netrunner Sector Offline",
+  "description": "Cyberpunk terminal maintenance screen for RIG // NETRUNNER.SYS featuring live kernel diagnostics, CRT scanlines, audio telemetry, and emergency interactive reboot controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
