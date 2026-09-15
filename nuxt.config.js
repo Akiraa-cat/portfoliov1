@@ -9,21 +9,21 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Route: /maintenance // SECTOR OFFLINE',
+      title: 'Portfolio Archives // Operative Credentials Verified',
       meta: [
         {
           name: 'description',
           content:
-            'Cyberpunk terminal maintenance screen for RIG // NETRUNNER.SYS featuring live kernel diagnostics, CRT scanlines, audio telemetry, and emergency interactive reboot controls.',
+            'Authenticated operator portfolio access. Core mission logs and codebase partitions are now online and ready for review.',
         },
         {
           property: 'og:title',
-          content: 'Route: /maintenance // SECTOR OFFLINE',
+          content: 'Portfolio Archives // Operative Credentials Verified',
         },
         {
           property: 'og:description',
           content:
-            'Cyberpunk terminal maintenance screen for RIG // NETRUNNER.SYS featuring live kernel diagnostics, CRT scanlines, audio telemetry, and emergency interactive reboot controls.',
+            'Authenticated operator portfolio access. Core mission logs and codebase partitions are now online and ready for review.',
         },
         { property: 'og:type', content: 'website' },
         { name: 'twitter:card', content: 'summary_large_image' },

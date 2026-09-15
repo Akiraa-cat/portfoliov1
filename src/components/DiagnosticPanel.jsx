@@ -9,12 +9,12 @@ import {
 } from '../utils/audio';
 
 const INITIAL_LOGS = [
-  { id: '1', text: '> SYSTEM POWER_ON... INITIALIZING CORE REPOSITORY', type: 'normal' },
-  { id: '2', text: '> INITIATING SERVER WAKE... NODE_ADDR: 0x8F41', type: 'normal' },
-  { id: '3', text: '> COMPILING LOADOUT DATA... [DOCKER, K8S, EBPF]', type: 'normal' },
-  { id: '4', text: '> ENCRYPTING MISSIONS & CREDENTIAL ARCHIVES... [DONE]', type: 'normal' },
-  { id: '5', text: '> WARNING: RAILWAY INGRESS TIMEOUT (504 GATEWAY DEADLINE)', type: 'warning' },
-  { id: '6', text: '> ERROR: SECTOR OFFLINE. REBUILD IN PROGRESS.', type: 'error' },
+  { id: '1', text: '> PORTFOLIO ACCESS AUTHENTICATED // OPERATIVE CREDENTIALS VERIFIED', type: 'normal' },
+  { id: '2', text: '> SPECIALIZATION: FULL-STACK PRODUCT ENGINEERING & SYSTEM DESIGN', type: 'normal' },
+  { id: '3', text: '> LATEST PROJECT: NUXT-POWERED PORTFOLIO EXPERIENCE', type: 'normal' },
+  { id: '4', text: '> SUCCESS RATE: 96% DELIVERY CONFIDENCE', type: 'normal' },
+  { id: '5', text: '> FEATURED ACHIEVEMENT: BUILD SYSTEMS, UI SYSTEMS, AND OPS ENABLEMENT', type: 'warning' },
+  { id: '6', text: '> STATUS: DEVELOPMENT PHASE ACTIVE // READY FOR REVIEW', type: 'error' },
 ];
 
 export const DiagnosticPanel = ({
@@ -25,7 +25,7 @@ export const DiagnosticPanel = ({
   const [isRebooting, setIsRebooting] = useState(false);
   const [isPinging, setIsPinging] = useState(false);
   const [progressPercentage, setProgressPercentage] = useState(99.04);
-  const [phaseText, setPhaseText] = useState('SYNCHRONIZING POD VOLUMES...');
+  const [phaseText, setPhaseText] = useState('CURATING CORE PROJECT INDEX...');
   const [logs, setLogs] = useState(INITIAL_LOGS);
 
   const terminalEndRef = useRef(null);
@@ -48,19 +48,19 @@ export const DiagnosticPanel = ({
 
     // Reset progress to show fresh cycle
     setProgressPercentage(14.2);
-    setPhaseText('EMERGENCY THREAD TEARDOWN // COLD BOOT...');
+    setPhaseText('PREPARING PORTFOLIO REVIEW // INDEXING CASE FILES...');
 
     const rebootSequence = [
-      { text: '> HARD RESET INTERRUPT TRIGGERED [SIGNAL_KILL_9]', type: 'normal', pct: 28.5, phase: 'PURGING VOLATILE RAM BUFFERS...' },
-      { text: '> RE-PROBING HYPERVISOR VIRTUAL BRIDGES...', type: 'normal', pct: 45.0, phase: 'RE-PROBING VIRTUAL BRIDGES...' },
-      { text: '> RESTORING CONTAINER BASELAYERS FROM SECURE VAULT...', type: 'normal', pct: 64.8, phase: 'MOUNTING ENCRYPTED PARTITIONS...' },
-      { text: '> CONNECTING ZERO-TRUST SEC_PROXY TUNNEL... [OK]', type: 'normal', pct: 81.3, phase: 'ESTABLISHING INGRESS HANDSHAKE...' },
-      { text: '> PINGING RAILWAY MULTI-CLUSTER BACKBONE...', type: 'normal', pct: 92.0, phase: 'VERIFYING UPSTREAM HEALTHCHECK...' },
-      { text: '> WARNING: HEALTHCHECK UNRESPONSIVE ON PORT 8080', type: 'warning', pct: 97.4, phase: 'STALLING RECOVERY PIPELINE...' },
-      { text: '> ERROR: 0x8F_CONTAINER_FATAL - SECTOR OFFLINE. REBUILD IN PROGRESS.', type: 'error', pct: 99.04, phase: 'SYNCHRONIZING POD VOLUMES...' },
+      { text: '> SCANNING PROJECT ARCHIVE // LOADING CASE NOTES...', type: 'normal', pct: 28.5, phase: 'INDEXING CORE WORKSTREAMS...' },
+      { text: '> REVIEWING DELIVERY SIGNALS // STACKS IN SYNC...', type: 'normal', pct: 45.0, phase: 'VALIDATING FEATURE SET...' },
+      { text: '> CURATING DEEP-DIVE SELECTIONS // PRIORITIZING HIGHLIGHTS...', type: 'normal', pct: 64.8, phase: 'SURFACING KEY ACHIEVEMENTS...' },
+      { text: '> AUTHENTICATING DESIGN SYSTEMS // BUILD STATUS VERIFIED', type: 'normal', pct: 81.3, phase: 'VERIFYING UX HEALTH...' },
+      { text: '> PINGING LIVE PROJECT SIGNALS // MISSION READINESS CHECK', type: 'normal', pct: 92.0, phase: 'FINAL REVIEW IN PROGRESS...' },
+      { text: '> NOTE: SOME SECTIONS REMAIN ACTIVE DEVELOPMENT', type: 'warning', pct: 97.4, phase: 'FINE-TUNING PORTFOLIO INDEX...' },
+      { text: '> STATUS: ARCHIVE READY FOR REVIEW // PROJECTS ONLINE', type: 'error', pct: 99.04, phase: 'CLEARANCE READY // PORTFOLIO ARCHIVES OPEN' },
     ];
 
-    setLogs([{ id: `reboot-${Date.now()}-0`, text: '> HARD POWER_CYCLE INITIATED...', type: 'warning' }]);
+    setLogs([{ id: `reboot-${Date.now()}-0`, text: '> PORTFOLIO REVIEW SESSION STARTED...', type: 'warning' }]);
 
     let step = 0;
     const interval = setInterval(() => {
@@ -81,7 +81,7 @@ export const DiagnosticPanel = ({
         clearInterval(interval);
         setIsRebooting(false);
         setProgressPercentage(99.04);
-        setPhaseText('SYNCHRONIZING POD VOLUMES...');
+        setPhaseText('CURATING CORE PROJECT INDEX...');
         if (!isMuted) playGlitchBuzzer();
       }
     }, 280);
@@ -98,7 +98,7 @@ export const DiagnosticPanel = ({
       ...prev,
       {
         id: `ping-${Date.now()}-1`,
-        text: `> [${timestamp}] ICMP ECHO REQUEST SENT TO GATEWAY 0x8F41...`,
+        text: `> [${timestamp}] DEPLOYMENT TRACE REQUEST SENT TO PORTFOLIO SIGNAL HOST...`,
         type: 'normal',
       },
     ]);
@@ -108,7 +108,7 @@ export const DiagnosticPanel = ({
         ...prev,
         {
           id: `ping-${Date.now()}-2`,
-          text: `> [${timestamp}] PING RESPONSE: PACKET REJECTED (FIREWALL RE-ROUTED TO /dev/null)`,
+          text: `> [${timestamp}] SIGNAL RESPONSE: PORTFOLIO ARCHIVE INITIALIZED // ACCESS VERIFIED`,
           type: 'warning',
         },
       ]);
@@ -153,12 +153,11 @@ export const DiagnosticPanel = ({
           <div className="flex items-center gap-2.5">
             <span className="w-2.5 h-2.5 bg-cyberPink shadow-[0_0_8px_#ff2a6d]"></span>
             <h1 className="text-lg sm:text-2xl md:text-3xl font-bold tracking-tight text-white uppercase font-sans">
-              SECTOR OFFLINE // KERNEL RECONSTRUCTION
+              PORTFOLIO ARCHIVES // OPERATIVE CREDENTIALS VERIFIED
             </h1>
           </div>
           <p className="text-xs sm:text-sm text-gray-400 font-sans leading-relaxed">
-            Automated zero-trust infrastructure re-indexing in progress. The requested netrunner
-            portfolio partition is currently undergoing cold storage migration.
+            Authenticated operator portfolio access. Core mission logs and codebase partitions are now online and ready for review.
           </p>
         </div>
 
@@ -169,7 +168,7 @@ export const DiagnosticPanel = ({
           </span>
           <span className="text-cyberYellow font-bold text-xs uppercase flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-cyberYellow animate-ping"></span>
-            STALLED_AT_REBUILD
+            LIVE_PORTFOLIO
           </span>
         </div>
       </div>
@@ -181,7 +180,7 @@ export const DiagnosticPanel = ({
           <div className="flex flex-wrap items-center justify-between text-xs gap-2">
             <div className="flex items-center gap-2">
               <span className="text-gray-400 uppercase tracking-wider text-[11px]">
-                RECONSTRUCTION LIFEBAR:
+                PROJECT STATUS:
               </span>
               <span className="text-cyberPink font-bold text-xs">
                 {phaseText}
@@ -194,7 +193,7 @@ export const DiagnosticPanel = ({
                 {progressPercentage.toFixed(2)}%
               </span>
               <span className="text-[10px] text-cyberYellow bg-cyberYellow/10 border border-cyberYellow/50 px-1.5 py-0.5 font-bold">
-                [HANG_DETECTED]
+                [ARCHIVE_READY]
               </span>
             </div>
           </div>
@@ -215,12 +214,12 @@ export const DiagnosticPanel = ({
 
           {/* Subtext info */}
           <div className="flex justify-between items-center text-[10px] text-gray-500 pt-0.5">
-            <span>0% [SECTOR_FLUSH]</span>
+            <span>0% [INDEXING]</span>
             <span className="text-gray-400">
-              ESTIMATED RECOVERY TIME:{' '}
-              <span className="text-gray-300 font-semibold">UNDEFINED (LOOP: 99%)</span>
+              REVIEW WINDOW:{' '}
+              <span className="text-gray-300 font-semibold">ACTIVE // OPEN FOR INSPECTION</span>
             </span>
-            <span>100% [MOUNTED]</span>
+            <span>100% [ONLINE]</span>
           </div>
         </div>
 
@@ -230,11 +229,11 @@ export const DiagnosticPanel = ({
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-cyberPink"></span>
               <span className="uppercase tracking-widest text-[11px] text-gray-300 font-bold">
-                VIRTUAL TTY /dev/pts/corrupted_daemon
+                MISSION LOG / ACTIVE PORTFOLIO SIGNAL
               </span>
             </div>
             <div className="text-[10px] text-mutedTeal font-bold">
-              BUFFER: AUTO_STREAMING
+              BUFFER: LIVE_ARCHIVE_STREAM
             </div>
           </div>
 
@@ -274,9 +273,8 @@ export const DiagnosticPanel = ({
           <div className="text-[11px] text-gray-400 text-center sm:text-left">
             <div className="text-gray-300 font-bold">RESCUE INTERACTION:</div>
             <span>
-              Attempts logged:{' '}
-              <span className="text-cyberPink font-bold">{rebootAttempts}</span>. Hard fails
-              reset to safe sandbox.
+              Review entries logged:{' '}
+              <span className="text-cyberPink font-bold">{rebootAttempts}</span>. Mission notes staged for operator inspection.
             </span>
           </div>
 
@@ -289,7 +287,7 @@ export const DiagnosticPanel = ({
               disabled={isPinging || isRebooting}
               className="flex-1 sm:flex-none text-center px-4 py-2.5 border border-terminal hover:border-gray-400 text-gray-400 hover:text-white bg-charcoal text-xs font-bold uppercase chamfer-btn transition-colors cursor-pointer disabled:opacity-50"
             >
-              {isPinging ? '[PINGING...]' : '[BYPASS_PING]'}
+              {isPinging ? '[REVIEWING...]' : '[OPEN CASE NOTES]'}
             </button>
 
             {/* Main Interactive Reboot Button */}
@@ -303,8 +301,8 @@ export const DiagnosticPanel = ({
               {isRebooting && <Loader2 className="w-4 h-4 animate-spin text-black" />}
               <span>
                 {isRebooting
-                  ? 'EXECUTING REBOOT CYCLE...'
-                  : 'FORCE KERNEL REBOOT [ENTER]'}
+                  ? 'LOADING DEEP-DIVE...'
+                  : 'VIEW PROJECT DEEP-DIVE [ENTER]'}
               </span>
             </button>
           </div>
@@ -314,20 +312,20 @@ export const DiagnosticPanel = ({
       {/* Telemetry Stats Strip */}
       <div className="bg-charcoal px-5 py-3 border-t border-mutedTeal/50 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[10px] text-gray-400">
         <div>
-          <span className="text-gray-500">DAEMON:</span>{' '}
-          <span className="text-gray-300">k8s-pod-recovery</span>
+          <span className="text-gray-500">SPECIALIZATION:</span>{' '}
+          <span className="text-gray-300">FULL-STACK SYSTEMS</span>
         </div>
         <div>
-          <span className="text-gray-500">PACKET LOSS:</span>{' '}
-          <span className="text-cyberPink font-bold">14.8%</span>
+          <span className="text-gray-500">SUCCESS RATE:</span>{' '}
+          <span className="text-cyberPink font-bold">96%</span>
         </div>
         <div>
-          <span className="text-gray-500">MEM CONSUMPTION:</span>{' '}
-          <span className="text-gray-300">14,308 / 16,384 MB</span>
+          <span className="text-gray-500">LATEST PROJECT:</span>{' '}
+          <span className="text-gray-300">NUXT PORTFOLIO</span>
         </div>
         <div className="text-right sm:text-left">
-          <span className="text-gray-500">ENCLAVE:</span>{' '}
-          <span className="text-cyberYellow font-bold">RESTRICTED</span>
+          <span className="text-gray-500">FEATURED:</span>{' '}
+          <span className="text-cyberYellow font-bold">DEV MODE ACTIVE</span>
         </div>
       </div>
     </div>

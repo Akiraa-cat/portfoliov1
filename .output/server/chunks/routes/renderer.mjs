@@ -149,7 +149,7 @@ function lazyCachedFunction(fn) {
 	};
 }
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Cyberpunk terminal maintenance screen for RIG // NETRUNNER.SYS featuring live kernel diagnostics, CRT scanlines, audio telemetry, and emergency interactive reboot controls."},{"property":"og:title","content":"Route: /maintenance // SECTOR OFFLINE"},{"property":"og:description","content":"Cyberpunk terminal maintenance screen for RIG // NETRUNNER.SYS featuring live kernel diagnostics, CRT scanlines, audio telemetry, and emergency interactive reboot controls."},{"property":"og:type","content":"website"},{"name":"twitter:card","content":"summary_large_image"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@400;500;600;700&family=VT323&display=swap"}],"style":[],"script":[],"noscript":[],"title":"Route: /maintenance // SECTOR OFFLINE"};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"},{"name":"description","content":"Authenticated operator portfolio access. Core mission logs and codebase partitions are now online and ready for review."},{"property":"og:title","content":"Portfolio Archives // Operative Credentials Verified"},{"property":"og:description","content":"Authenticated operator portfolio access. Core mission logs and codebase partitions are now online and ready for review."},{"property":"og:type","content":"website"},{"name":"twitter:card","content":"summary_large_image"}],"link":[{"rel":"preconnect","href":"https://fonts.googleapis.com"},{"rel":"preconnect","href":"https://fonts.gstatic.com","crossorigin":""},{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@400;500;600;700&family=VT323&display=swap"}],"style":[],"script":[],"noscript":[],"title":"Portfolio Archives // Operative Credentials Verified"};
 
 const appRootTag = "div";
 
@@ -259,7 +259,7 @@ const renderSSRHeadOptions = {"omitLineBreaks":true};
 
 const entryIds = [];
 
-const entryFileName = "CGQRabdN.js";
+const entryFileName = "CwAebfjb.js";
 
 //#region src/runtime/handlers/renderer.ts
 globalThis.__buildAssetsURL = buildAssetsURL;

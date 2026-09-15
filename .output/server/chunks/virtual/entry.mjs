@@ -1037,7 +1037,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
 	_push(`<footer${ssrRenderAttrs(mergeProps({
 		id: "bottom-hud-footer",
 		class: "relative z-20 w-full border-t border-[#2c3539]/80 bg-[#121316]/95 px-4 md:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3 text-[10px] text-gray-400 font-mono select-none"
-	}, _attrs))}><div class="flex items-center gap-3"><span class="text-[#ff2a6d] font-bold">PROTOCOL: OFFLINE_DIAGNOSTIC</span><span class="hidden sm:inline-block text-[#2c3539]">|</span><span class="hidden sm:inline-block text-gray-400"> DIRECTIVE: CLOUD_CONTAINER_RECOVERY </span></div><div class="flex items-center gap-4"><span>DATA_ENC: AES-256-GCM</span><span class="text-[#e5c158] font-bold">SEC_STATUS: HAZARD_LOCKOUT</span></div></footer>`);
+	}, _attrs))}><div class="flex items-center gap-3"><span class="text-[#ff2a6d] font-bold">PROTOCOL: PORTFOLIO_REVIEW</span><span class="hidden sm:inline-block text-[#2c3539]">|</span><span class="hidden sm:inline-block text-gray-400"> DIRECTIVE: ACTIVE_DEVELOPMENT_TRACK </span></div><div class="flex items-center gap-4"><span>DATA_ENC: PROJECT_LOGS</span><span class="text-[#e5c158] font-bold">SEC_STATUS: ARCHIVE_READY</span></div></footer>`);
 }
 var _sfc_setup$7 = _sfc_main$7.setup;
 _sfc_main$7.setup = (props, ctx) => {
@@ -1060,36 +1060,36 @@ var _sfc_main$6 = {
 		const isRebooting = ref(false);
 		const isPinging = ref(false);
 		const progressPercentage = ref(99.04);
-		const phaseText = ref("SYNCHRONIZING POD VOLUMES...");
+		const phaseText = ref("CURATING CORE PROJECT INDEX...");
 		const logs = ref([
 			{
 				id: "1",
-				text: "> SYSTEM POWER_ON... INITIALIZING CORE REPOSITORY",
+				text: "> PORTFOLIO ACCESS AUTHENTICATED // OPERATIVE CREDENTIALS VERIFIED",
 				type: "normal"
 			},
 			{
 				id: "2",
-				text: "> INITIATING SERVER WAKE... NODE_ADDR: 0x8F41",
+				text: "> SPECIALIZATION: FULL-STACK PRODUCT ENGINEERING & SYSTEM DESIGN",
 				type: "normal"
 			},
 			{
 				id: "3",
-				text: "> COMPILING LOADOUT DATA... [DOCKER, K8S, EBPF]",
+				text: "> LATEST PROJECT: NUXT-POWERED PORTFOLIO EXPERIENCE",
 				type: "normal"
 			},
 			{
 				id: "4",
-				text: "> ENCRYPTING MISSIONS & CREDENTIAL ARCHIVES... [DONE]",
+				text: "> SUCCESS RATE: 96% DELIVERY CONFIDENCE",
 				type: "normal"
 			},
 			{
 				id: "5",
-				text: "> WARNING: RAILWAY INGRESS TIMEOUT (504 GATEWAY DEADLINE)",
+				text: "> FEATURED ACHIEVEMENT: BUILD SYSTEMS, UI SYSTEMS, AND OPS ENABLEMENT",
 				type: "warning"
 			},
 			{
 				id: "6",
-				text: "> ERROR: SECTOR OFFLINE. REBUILD IN PROGRESS.",
+				text: "> STATUS: DEVELOPMENT PHASE ACTIVE // READY FOR REVIEW",
 				type: "error"
 			}
 		]);
@@ -1104,7 +1104,7 @@ var _sfc_main$6 = {
 			_push(`<div${ssrRenderAttrs(mergeProps({
 				id: "primary-diagnostic-hud",
 				class: "w-full chamfer-hud bg-[#121316]/95 border-2 border-[#1a4744] shadow-[0_0_40px_rgba(26,71,68,0.4)] relative overflow-hidden backdrop-blur-md select-none font-mono"
-			}, _attrs))}><div class="absolute top-2 left-2 text-[#1a4744]/70 text-[9px] pointer-events-none select-none"> ┌── [DIAG_V4.2] ─────────────────────── </div><div class="absolute top-2 right-2 text-[#1a4744]/70 text-[9px] pointer-events-none select-none"> ───────────────────── [SYS_STABLE: NO] ┐ </div><div class="absolute bottom-2 right-2 text-[#1a4744]/70 text-[9px] pointer-events-none select-none"> [CONTAINER: AWS_EKS_FAILOVER] ┘ </div><div class="px-5 pt-7 pb-4 md:px-8 border-b border-[#1a4744]/50 flex flex-wrap items-center justify-between gap-4"><div class="space-y-1.5 max-w-2xl"><div class="flex items-center gap-2.5"><span class="w-2.5 h-2.5 bg-[#ff2a6d] shadow-[0_0_8px_#ff2a6d]"></span><h1 class="text-lg sm:text-2xl md:text-3xl font-bold tracking-tight text-white uppercase font-sans"> SECTOR OFFLINE // KERNEL RECONSTRUCTION </h1></div><p class="text-xs sm:text-sm text-gray-400 font-sans leading-relaxed"> Automated zero-trust infrastructure re-indexing in progress. The requested netrunner portfolio partition is currently undergoing cold storage migration. </p></div><div class="chamfer-btn bg-[#0a0a0c] border border-[#e5c158] px-3.5 py-1.5 flex flex-col items-end shadow-[0_0_12px_rgba(229,193,88,0.2)]"><span class="text-[9px] text-gray-400 uppercase tracking-widest"> CURRENT STATE </span><span class="text-[#e5c158] font-bold text-xs uppercase flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#e5c158] animate-ping"></span> STALLED_AT_REBUILD </span></div></div><div class="p-5 md:p-8 space-y-6"><div class="space-y-2 bg-[#0a0a0c]/80 p-4 border border-[#2c3539] chamfer-card"><div class="flex flex-wrap items-center justify-between text-xs gap-2"><div class="flex items-center gap-2"><span class="text-gray-400 uppercase tracking-wider text-[11px]"> RECONSTRUCTION LIFEBAR: </span><span class="text-[#ff2a6d] font-bold text-xs">${ssrInterpolate(phaseText.value)}</span></div><div class="text-xs flex items-center gap-2"><span class="text-gray-400">SYNCHRONIZED:</span><span class="text-[#ff2a6d] font-bold text-sm glitch-active">${ssrInterpolate(progressText.value)}</span><span class="text-[10px] text-[#e5c158] bg-[#e5c158]/10 border border-[#e5c158]/50 px-1.5 py-0.5 font-bold"> [HANG_DETECTED] </span></div></div><div class="w-full h-5 bg-[#0a0a0c] border border-[#1a4744]/80 p-0.5 relative overflow-hidden flex items-center shadow-inner"><div class="h-full bg-gradient-to-r from-[#1a4744] via-[#ff2a6d] to-[#ff2a6d] transition-all duration-300 relative shadow-[0_0_12px_rgba(255,42,109,0.7)]" style="${ssrRenderStyle({ width: `${progressPercentage.value}%` })}"><div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.35)_50%,transparent_100%)] w-24 animate-[marquee_2.2s_linear_infinite]"></div></div><div class="absolute right-1 top-0 bottom-0 w-1 bg-[#e5c158] animate-pulse"></div></div><div class="flex justify-between items-center text-[10px] text-gray-500 pt-0.5"><span>0% [SECTOR_FLUSH]</span><span class="text-gray-400"> ESTIMATED RECOVERY TIME: <span class="text-gray-300 font-semibold">UNDEFINED (LOOP: 99%)</span></span><span>100% [MOUNTED]</span></div></div><div class="space-y-2"><div class="flex items-center justify-between text-xs text-gray-400 px-1"><div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#ff2a6d]"></span><span class="uppercase tracking-widest text-[11px] text-gray-300 font-bold"> VIRTUAL TTY /dev/pts/corrupted_daemon </span></div><div class="text-[10px] text-[#1a4744] font-bold"> BUFFER: AUTO_STREAMING </div></div><div id="terminal-log-window" class="bg-[#0a0a0c]/95 border border-[#1a4744]/80 p-4 text-xs sm:text-sm h-48 sm:h-52 overflow-y-auto space-y-1.5 shadow-inner chamfer-card focus:outline-none" tabindex="0"><!--[-->`);
+			}, _attrs))}><div class="absolute top-2 left-2 text-[#1a4744]/70 text-[9px] pointer-events-none select-none"> ┌── [PORTFOLIO_OS_V1] ─────────────────────── </div><div class="absolute top-2 right-2 text-[#1a4744]/70 text-[9px] pointer-events-none select-none"> ───────────────────── [ACCESS: VERIFIED] ┐ </div><div class="absolute bottom-2 right-2 text-[#1a4744]/70 text-[9px] pointer-events-none select-none"> [ARCHIVE: ACTIVE_DEV_MODE] ┘ </div><div class="px-5 pt-7 pb-4 md:px-8 border-b border-[#1a4744]/50 flex flex-wrap items-center justify-between gap-4"><div class="space-y-1.5 max-w-2xl"><div class="flex items-center gap-2.5"><span class="w-2.5 h-2.5 bg-[#ff2a6d] shadow-[0_0_8px_#ff2a6d]"></span><h1 class="text-lg sm:text-2xl md:text-3xl font-bold tracking-tight text-white uppercase font-sans"> PORTFOLIO ARCHIVES // OPERATIVE CREDENTIALS VERIFIED </h1></div><p class="text-xs sm:text-sm text-gray-400 font-sans leading-relaxed"> Authenticated operator portfolio access. Core mission logs and codebase partitions are now online and ready for review. </p></div><div class="chamfer-btn bg-[#0a0a0c] border border-[#e5c158] px-3.5 py-1.5 flex flex-col items-end shadow-[0_0_12px_rgba(229,193,88,0.2)]"><span class="text-[9px] text-gray-400 uppercase tracking-widest"> CURRENT STATE </span><span class="text-[#e5c158] font-bold text-xs uppercase flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#e5c158] animate-ping"></span> LIVE_PORTFOLIO </span></div></div><div class="p-5 md:p-8 space-y-6"><div class="space-y-2 bg-[#0a0a0c]/80 p-4 border border-[#2c3539] chamfer-card"><div class="flex flex-wrap items-center justify-between text-xs gap-2"><div class="flex items-center gap-2"><span class="text-gray-400 uppercase tracking-wider text-[11px]"> PROJECT STATUS: </span><span class="text-[#ff2a6d] font-bold text-xs">${ssrInterpolate(phaseText.value)}</span></div><div class="text-xs flex items-center gap-2"><span class="text-gray-400">SYNCHRONIZED:</span><span class="text-[#ff2a6d] font-bold text-sm glitch-active">${ssrInterpolate(progressText.value)}</span><span class="text-[10px] text-[#e5c158] bg-[#e5c158]/10 border border-[#e5c158]/50 px-1.5 py-0.5 font-bold"> [ARCHIVE_READY] </span></div></div><div class="w-full h-5 bg-[#0a0a0c] border border-[#1a4744]/80 p-0.5 relative overflow-hidden flex items-center shadow-inner"><div class="h-full bg-gradient-to-r from-[#1a4744] via-[#ff2a6d] to-[#ff2a6d] transition-all duration-300 relative shadow-[0_0_12px_rgba(255,42,109,0.7)]" style="${ssrRenderStyle({ width: `${progressPercentage.value}%` })}"><div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.35)_50%,transparent_100%)] w-24 animate-[marquee_2.2s_linear_infinite]"></div></div><div class="absolute right-1 top-0 bottom-0 w-1 bg-[#e5c158] animate-pulse"></div></div><div class="flex justify-between items-center text-[10px] text-gray-500 pt-0.5"><span>0% [INDEXING]</span><span class="text-gray-400"> REVIEW WINDOW: <span class="text-gray-300 font-semibold">ACTIVE // OPEN FOR INSPECTION</span></span><span>100% [ONLINE]</span></div></div><div class="space-y-2"><div class="flex items-center justify-between text-xs text-gray-400 px-1"><div class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#ff2a6d]"></span><span class="uppercase tracking-widest text-[11px] text-gray-300 font-bold"> MISSION LOG / ACTIVE PORTFOLIO SIGNAL </span></div><div class="text-[10px] text-[#1a4744] font-bold"> BUFFER: LIVE_ARCHIVE_STREAM </div></div><div id="terminal-log-window" class="bg-[#0a0a0c]/95 border border-[#1a4744]/80 p-4 text-xs sm:text-sm h-48 sm:h-52 overflow-y-auto space-y-1.5 shadow-inner chamfer-card focus:outline-none" tabindex="0"><!--[-->`);
 			ssrRenderList(logs.value, (log) => {
 				_push(`<!--[-->`);
 				if (log.type === "error") _push(`<div class="text-[#ff2a6d] font-bold flex items-center"><span>${ssrInterpolate(log.text)}</span><span class="animate-blink font-bold text-[#ff2a6d] ml-0.5">_</span></div>`);
@@ -1112,10 +1112,10 @@ var _sfc_main$6 = {
 				else _push(`<div class="text-gray-300">${ssrInterpolate(log.text)}</div>`);
 				_push(`<!--]-->`);
 			});
-			_push(`<!--]--><div></div></div></div><div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#2c3539]"><div class="text-[11px] text-gray-400 text-center sm:text-left"><div class="text-gray-300 font-bold">RESCUE INTERACTION:</div><span> Attempts logged: <span class="text-[#ff2a6d] font-bold">${ssrInterpolate(rebootAttempts.value)}</span>. Hard fails reset to safe sandbox. </span></div><div class="flex items-center gap-3 w-full sm:w-auto"><button id="bypassPingBtn" type="button"${ssrIncludeBooleanAttr(isPinging.value || isRebooting.value) ? " disabled" : ""} class="flex-1 sm:flex-none text-center px-4 py-2.5 border border-[#2c3539] hover:border-gray-400 text-gray-400 hover:text-white bg-[#121316] text-xs font-bold uppercase chamfer-btn transition-colors cursor-pointer disabled:opacity-50">${ssrInterpolate(isPinging.value ? "[PINGING...]" : "[BYPASS_PING]")}</button><button id="rebootBtn" type="button"${ssrIncludeBooleanAttr(isRebooting.value) ? " disabled" : ""} class="flex-1 sm:flex-none px-6 py-2.5 bg-[#ff2a6d] hover:bg-[#ff2a6d]/90 text-black text-xs sm:text-sm font-bold tracking-wider uppercase chamfer-btn shadow-[0_0_25px_rgba(255,42,109,0.5)] transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-80">`);
+			_push(`<!--]--><div></div></div></div><div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-[#2c3539]"><div class="text-[11px] text-gray-400 text-center sm:text-left"><div class="text-gray-300 font-bold">MISSION REVIEW:</div><span> Review entries logged: <span class="text-[#ff2a6d] font-bold">${ssrInterpolate(rebootAttempts.value)}</span>. Mission notes staged for operator inspection. </span></div><div class="flex items-center gap-3 w-full sm:w-auto"><button id="bypassPingBtn" type="button"${ssrIncludeBooleanAttr(isPinging.value || isRebooting.value) ? " disabled" : ""} class="flex-1 sm:flex-none text-center px-4 py-2.5 border border-[#2c3539] hover:border-gray-400 text-gray-400 hover:text-white bg-[#121316] text-xs font-bold uppercase chamfer-btn transition-colors cursor-pointer disabled:opacity-50">${ssrInterpolate(isPinging.value ? "[REVIEWING...]" : "[OPEN CASE NOTES]")}</button><button id="rebootBtn" type="button"${ssrIncludeBooleanAttr(isRebooting.value) ? " disabled" : ""} class="flex-1 sm:flex-none px-6 py-2.5 bg-[#ff2a6d] hover:bg-[#ff2a6d]/90 text-black text-xs sm:text-sm font-bold tracking-wider uppercase chamfer-btn shadow-[0_0_25px_rgba(255,42,109,0.5)] transition-all active:scale-95 flex items-center justify-center gap-2 cursor-pointer disabled:opacity-80">`);
 			if (isRebooting.value) _push(ssrRenderComponent(unref(Loader2), { class: "w-4 h-4 animate-spin text-black" }, null, _parent));
 			else _push(`<!---->`);
-			_push(`<span>${ssrInterpolate(isRebooting.value ? "EXECUTING REBOOT CYCLE..." : "FORCE KERNEL REBOOT [ENTER]")}</span></button></div></div></div><div class="bg-[#121316] px-5 py-3 border-t border-[#1a4744]/50 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[10px] text-gray-400"><div><span class="text-gray-500">DAEMON:</span><span class="text-gray-300">k8s-pod-recovery</span></div><div><span class="text-gray-500">PACKET LOSS:</span><span class="text-[#ff2a6d] font-bold">14.8%</span></div><div><span class="text-gray-500">MEM CONSUMPTION:</span><span class="text-gray-300">14,308 / 16,384 MB</span></div><div class="text-right sm:text-left"><span class="text-gray-500">ENCLAVE:</span><span class="text-[#e5c158] font-bold">RESTRICTED</span></div></div></div>`);
+			_push(`<span>${ssrInterpolate(isRebooting.value ? "LOADING DEEP-DIVE..." : "VIEW PROJECT DEEP-DIVE [ENTER]")}</span></button></div></div></div><div class="bg-[#121316] px-5 py-3 border-t border-[#1a4744]/50 grid grid-cols-2 sm:grid-cols-4 gap-2 text-[10px] text-gray-400"><div><span class="text-gray-500">SPECIALIZATION:</span><span class="text-gray-300">FULL-STACK SYSTEMS</span></div><div><span class="text-gray-500">SUCCESS RATE:</span><span class="text-[#ff2a6d] font-bold">96%</span></div><div><span class="text-gray-500">LATEST PROJECT:</span><span class="text-gray-300">NUXT PORTFOLIO</span></div><div class="text-right sm:text-left"><span class="text-gray-500">FEATURED:</span><span class="text-[#e5c158] font-bold">DEV MODE ACTIVE</span></div></div></div>`);
 		};
 	}
 };
@@ -1137,7 +1137,7 @@ var _sfc_main$5 = {
 				class: "w-full chamfer-card overflow-hidden border border-[#ff2a6d]/80 shadow-[0_0_30px_rgba(255,42,109,0.22)] select-none"
 			}, _attrs))}><div class="hazard-stripes h-3 w-full opacity-90"></div><div class="bg-[#0a0a0c]/95 px-4 md:px-6 py-2 flex flex-wrap items-center justify-between gap-3 border-y border-[#ff2a6d]/40"><div class="flex items-center gap-2.5 text-[#ff2a6d]">`);
 			_push(ssrRenderComponent(unref(AlertTriangle), { class: "w-4 h-4 md:w-5 md:h-5 flex-shrink-0 animate-pulse" }, null, _parent));
-			_push(`<span class="font-bold text-xs md:text-sm tracking-wider uppercase font-mono"> FAULT SIGNAL // ERROR CODE: 0X8F_SECTOR_OFFLINE </span></div><div class="flex items-center gap-2 text-[11px] font-mono"><span class="text-gray-400">CLEARANCE REQUIRED:</span><span class="bg-[#ff2a6d]/20 text-[#ff2a6d] px-2.5 py-0.5 border border-[#ff2a6d]/60 font-bold uppercase tracking-widest text-[10px] chamfer-pill"> OPERATOR S-RANK </span></div></div><div class="hazard-stripes h-2.5 w-full opacity-80"></div></div>`);
+			_push(`<span class="font-bold text-xs md:text-sm tracking-wider uppercase font-mono"> PORTFOLIO ARCHIVES // OPERATIVE CREDENTIALS VERIFIED </span></div><div class="flex items-center gap-2 text-[11px] font-mono"><span class="text-gray-400">CLEARANCE REQUIRED:</span><span class="bg-[#ff2a6d]/20 text-[#ff2a6d] px-2.5 py-0.5 border border-[#ff2a6d]/60 font-bold uppercase tracking-widest text-[10px] chamfer-pill"> ACCESS: VERIFIED </span></div></div><div class="hazard-stripes h-2.5 w-full opacity-80"></div></div>`);
 		};
 	}
 };
@@ -1159,7 +1159,7 @@ var _sfc_main$4 = {
 			_push(`<header${ssrRenderAttrs(mergeProps({
 				id: "top-hud-header",
 				class: "relative z-20 w-full border-b border-[#2c3539]/80 bg-[#121316]/95 backdrop-blur px-4 md:px-8 py-2.5 flex flex-wrap items-center justify-between gap-3 text-xs font-mono select-none"
-			}, _attrs))}><div class="flex items-center gap-4 md:gap-6"><div class="flex items-center gap-2.5"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff2a6d] opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ff2a6d]"></span></span><span class="font-bold text-white tracking-widest uppercase text-xs md:text-sm"> RIG // NETRUNNER.SYS </span><span class="hidden sm:inline-block px-1.5 py-0.5 border border-[#ff2a6d]/60 text-[#ff2a6d] text-[10px] font-bold bg-[#ff2a6d]/10 tracking-wider"> EMERGENCY_OVERRIDE </span></div><div class="hidden md:flex items-center gap-2.5 border-l border-[#2c3539] pl-4"><span class="text-[10px] text-gray-400 uppercase tracking-tight"> INTEGRITY GAUGE: </span><div class="flex items-center gap-1"><div class="w-2.5 h-4 bg-[#ff2a6d] chamfer-pill shadow-[0_0_8px_rgba(255,42,109,0.5)]"></div><div class="w-2.5 h-4 bg-[#ff2a6d] chamfer-pill shadow-[0_0_8px_rgba(255,42,109,0.5)]"></div><div class="w-2.5 h-4 bg-[#ff2a6d]/30 chamfer-pill"></div><div class="w-2.5 h-4 bg-[#ff2a6d]/20 chamfer-pill"></div><div class="w-2.5 h-4 bg-[#ff2a6d]/10 chamfer-pill"></div></div><span class="text-[#ff2a6d] font-bold text-[11px] tracking-tight"> [41.2% CRITICAL] </span></div></div><div class="flex items-center gap-3 md:gap-6 text-[11px]"><div class="hidden lg:flex items-center gap-2 text-gray-400"><span>LOC:</span><span class="text-gray-200">SECTOR_07 // KERNEL_CORE</span></div><div class="flex items-center gap-1.5 text-[#e5c158]"><span class="inline-block w-1.5 h-1.5 bg-[#e5c158] rounded-full animate-pulse shadow-[0_0_6px_rgba(229,193,88,0.8)]"></span><span class="font-medium">AUDIT_DAEMON: ACTIVE</span></div><button id="audioToggleBtn" type="button" class="px-2.5 py-1 border border-[#2c3539] hover:border-[#ff2a6d] hover:text-[#ff2a6d] bg-[#0a0a0c]/80 text-gray-300 transition-colors uppercase text-[10px] flex items-center gap-1.5 cursor-pointer chamfer-btn" title="Toggle UI Web Audio Synthesizer (Key: M)">`);
+			}, _attrs))}><div class="flex items-center gap-4 md:gap-6"><div class="flex items-center gap-2.5"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ff2a6d] opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ff2a6d]"></span></span><span class="font-bold text-white tracking-widest uppercase text-xs md:text-sm"> PORTFOLIO // ARCHIVE ACCESS </span><span class="hidden sm:inline-block px-1.5 py-0.5 border border-[#ff2a6d]/60 text-[#ff2a6d] text-[10px] font-bold bg-[#ff2a6d]/10 tracking-wider"> DEV_BUILD </span></div><div class="hidden md:flex items-center gap-2.5 border-l border-[#2c3539] pl-4"><span class="text-[10px] text-gray-400 uppercase tracking-tight"> SIGNAL GAUGE: </span><div class="flex items-center gap-1"><div class="w-2.5 h-4 bg-[#ff2a6d] chamfer-pill shadow-[0_0_8px_rgba(255,42,109,0.5)]"></div><div class="w-2.5 h-4 bg-[#ff2a6d] chamfer-pill shadow-[0_0_8px_rgba(255,42,109,0.5)]"></div><div class="w-2.5 h-4 bg-[#ff2a6d]/30 chamfer-pill"></div><div class="w-2.5 h-4 bg-[#ff2a6d]/20 chamfer-pill"></div><div class="w-2.5 h-4 bg-[#ff2a6d]/10 chamfer-pill"></div></div><span class="text-[#ff2a6d] font-bold text-[11px] tracking-tight"> [READY FOR REVIEW] </span></div></div><div class="flex items-center gap-3 md:gap-6 text-[11px]"><div class="hidden lg:flex items-center gap-2 text-gray-400"><span>LOC:</span><span class="text-gray-200">OPERATOR // PROJECT_ARCHIVE</span></div><div class="flex items-center gap-1.5 text-[#e5c158]"><span class="inline-block w-1.5 h-1.5 bg-[#e5c158] rounded-full animate-pulse shadow-[0_0_6px_rgba(229,193,88,0.8)]"></span><span class="font-medium">PORTFOLIO_DAEMON: ACTIVE</span></div><button id="audioToggleBtn" type="button" class="px-2.5 py-1 border border-[#2c3539] hover:border-[#ff2a6d] hover:text-[#ff2a6d] bg-[#0a0a0c]/80 text-gray-300 transition-colors uppercase text-[10px] flex items-center gap-1.5 cursor-pointer chamfer-btn" title="Toggle UI Web Audio Synthesizer (Key: M)">`);
 			if (__props.isMuted) _push(ssrRenderComponent(unref(VolumeX), { class: "w-3.5 h-3.5 text-gray-400" }, null, _parent));
 			else _push(ssrRenderComponent(unref(Volume2), { class: "w-3.5 h-3.5 text-[#ff2a6d] animate-pulse" }, null, _parent));
 			_push(`<span>${ssrInterpolate(__props.isMuted ? "AUDIO: MUTED" : "AUDIO: ACTIVE")}</span></button></div></header>`);
@@ -1180,20 +1180,20 @@ var _sfc_main$3 = {
 	props: { isMuted: Boolean },
 	setup(__props) {
 		const NODES = [
-			"/profile",
-			"/missions",
-			"/loadout",
-			"/achievements",
-			"/journey"
+			"/overview",
+			"/stack",
+			"/showcase",
+			"/timeline",
+			"/notes"
 		];
 		const deniedNode = ref(null);
 		return (_ctx, _push, _parent, _attrs) => {
-			_push(`<div${ssrRenderAttrs(mergeProps({ class: "w-full flex flex-col items-center gap-2 select-none font-mono" }, _attrs))}><div class="flex flex-wrap items-center justify-center gap-2 text-[11px] text-gray-400"><span class="text-gray-500 uppercase tracking-wider mr-1 text-[10px]"> UNREACHABLE NODES: </span><!--[-->`);
+			_push(`<div${ssrRenderAttrs(mergeProps({ class: "w-full flex flex-col items-center gap-2 select-none font-mono" }, _attrs))}><div class="flex flex-wrap items-center justify-center gap-2 text-[11px] text-gray-400"><span class="text-gray-500 uppercase tracking-wider mr-1 text-[10px]"> ARCHIVE PATHS: </span><!--[-->`);
 			ssrRenderList(NODES, (node) => {
-				_push(`<button type="button" class="px-2.5 py-1 bg-[#121316] border border-[#2c3539]/80 text-gray-500 line-through hover:border-[#ff2a6d]/60 hover:text-[#ff2a6d] transition-colors cursor-pointer text-[11px]"${ssrRenderAttr("title", `Node ${node} currently locked in cold storage migration`)}> [${ssrInterpolate(node)}] </button>`);
+				_push(`<button type="button" class="px-2.5 py-1 bg-[#121316] border border-[#2c3539]/80 text-gray-500 line-through hover:border-[#ff2a6d]/60 hover:text-[#ff2a6d] transition-colors cursor-pointer text-[11px]"${ssrRenderAttr("title", `Section ${node} remains in active development review`)}> [${ssrInterpolate(node)}] </button>`);
 			});
 			_push(`<!--]--></div>`);
-			if (deniedNode.value) _push(`<div class="text-[10px] text-[#ff2a6d] bg-[#ff2a6d]/10 border border-[#ff2a6d]/40 px-3 py-1 chamfer-card animate-pulse tracking-wide"> SECURITY_ALERT: ROUTE ${ssrInterpolate(deniedNode.value)} ACCESS DENIED. HAZARD LOCKOUT ENFORCED. </div>`);
+			if (deniedNode.value) _push(`<div class="text-[10px] text-[#ff2a6d] bg-[#ff2a6d]/10 border border-[#ff2a6d]/40 px-3 py-1 chamfer-card animate-pulse tracking-wide"> ACCESS DENIED: ${ssrInterpolate(deniedNode.value)} REMAINS IN ACTIVE DEVELOPMENT. REVIEW MODE ENFORCED. </div>`);
 			else _push(`<!---->`);
 			_push(`</div>`);
 		};
@@ -1223,7 +1223,7 @@ var _sfc_main$2 = {
 			isMuted.value = !isMuted.value;
 		};
 		return (_ctx, _push, _parent, _attrs) => {
-			_push(`<div${ssrRenderAttrs(mergeProps({ class: "min-h-screen bg-[#0a0a0c] text-gray-300 font-mono antialiased overflow-x-hidden selection:bg-[#ff2a6d] selection:text-black relative flex flex-col justify-between" }, _attrs))}><div class="fixed inset-0 crt-overlay opacity-40 z-50 pointer-events-none"></div><div id="reboot-flash-overlay" class="${ssrRenderClass([isFlashing.value ? "reboot-flash" : "opacity-0", "fixed inset-0 z-[60] pointer-events-none transition-none"])}"></div><div class="fixed inset-0 pointer-events-none z-0" style="${ssrRenderStyle({ "background": "radial-gradient(circle at 50% 45%, rgba(255, 42, 109, 0.05) 0%, rgba(26, 71, 68, 0.06) 50%, rgba(10, 10, 12, 0.95) 85%)" })}"></div>`);
+			_push(`<div${ssrRenderAttrs(mergeProps({ class: "min-h-screen bg-void text-gray-300 font-mono antialiased overflow-x-hidden selection:bg-cyberPink selection:text-black relative flex flex-col justify-between" }, _attrs))}><div class="fixed inset-0 crt-overlay opacity-40 z-50 pointer-events-none"></div><div id="reboot-flash-overlay" class="${ssrRenderClass([isFlashing.value ? "reboot-flash" : "opacity-0", "fixed inset-0 z-60 pointer-events-none transition-none"])}"></div><div class="fixed inset-0 pointer-events-none z-0" style="${ssrRenderStyle({ "background": "radial-gradient(circle at 50% 45%, rgba(255, 42, 109, 0.05) 0%, rgba(26, 71, 68, 0.06) 50%, rgba(10, 10, 12, 0.95) 85%)" })}"></div>`);
 			_push(ssrRenderComponent(_sfc_main$4, {
 				"is-muted": isMuted.value,
 				onToggleAudio: toggleAudio

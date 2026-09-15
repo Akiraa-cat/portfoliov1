@@ -13,14 +13,14 @@ import { AlertTriangle } from 'lucide-vue-next';
       <div class="flex items-center gap-2.5 text-[#ff2a6d]">
         <AlertTriangle class="w-4 h-4 md:w-5 md:h-5 flex-shrink-0 animate-pulse" />
         <span class="font-bold text-xs md:text-sm tracking-wider uppercase font-mono">
-          FAULT SIGNAL // ERROR CODE: 0X8F_SECTOR_OFFLINE
+          PORTFOLIO ARCHIVES // OPERATIVE CREDENTIALS VERIFIED
         </span>
       </div>
 
       <div class="flex items-center gap-2 text-[11px] font-mono">
         <span class="text-gray-400">CLEARANCE REQUIRED:</span>
         <span class="bg-[#ff2a6d]/20 text-[#ff2a6d] px-2.5 py-0.5 border border-[#ff2a6d]/60 font-bold uppercase tracking-widest text-[10px] chamfer-pill">
-          OPERATOR S-RANK
+          ACCESS: VERIFIED
         </span>
       </div>
     </div>

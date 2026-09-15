@@ -26,16 +26,16 @@ const toggleAudio = () => {
           <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#ff2a6d]"></span>
         </span>
         <span class="font-bold text-white tracking-widest uppercase text-xs md:text-sm">
-          RIG // NETRUNNER.SYS
+          PORTFOLIO // ARCHIVE ACCESS
         </span>
         <span class="hidden sm:inline-block px-1.5 py-0.5 border border-[#ff2a6d]/60 text-[#ff2a6d] text-[10px] font-bold bg-[#ff2a6d]/10 tracking-wider">
-          EMERGENCY_OVERRIDE
+          DEV_BUILD
         </span>
       </div>
 
       <div class="hidden md:flex items-center gap-2.5 border-l border-[#2c3539] pl-4">
         <span class="text-[10px] text-gray-400 uppercase tracking-tight">
-          INTEGRITY GAUGE:
+          SIGNAL GAUGE:
         </span>
         <div class="flex items-center gap-1">
           <div class="w-2.5 h-4 bg-[#ff2a6d] chamfer-pill shadow-[0_0_8px_rgba(255,42,109,0.5)]"></div>
@@ -45,7 +45,7 @@ const toggleAudio = () => {
           <div class="w-2.5 h-4 bg-[#ff2a6d]/10 chamfer-pill"></div>
         </div>
         <span class="text-[#ff2a6d] font-bold text-[11px] tracking-tight">
-          [41.2% CRITICAL]
+          [READY FOR REVIEW]
         </span>
       </div>
     </div>
@@ -53,12 +53,12 @@ const toggleAudio = () => {
     <div class="flex items-center gap-3 md:gap-6 text-[11px]">
       <div class="hidden lg:flex items-center gap-2 text-gray-400">
         <span>LOC:</span>
-        <span class="text-gray-200">SECTOR_07 // KERNEL_CORE</span>
+        <span class="text-gray-200">OPERATOR // PROJECT_ARCHIVE</span>
       </div>
 
       <div class="flex items-center gap-1.5 text-[#e5c158]">
         <span class="inline-block w-1.5 h-1.5 bg-[#e5c158] rounded-full animate-pulse shadow-[0_0_6px_rgba(229,193,88,0.8)]"></span>
-        <span class="font-medium">AUDIT_DAEMON: ACTIVE</span>
+        <span class="font-medium">PORTFOLIO_DAEMON: ACTIVE</span>
       </div>
 
       <button
